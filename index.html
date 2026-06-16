@@ -529,7 +529,48 @@ async function loadData(){
 
 }
 
-function persistData(){}
+// 1. Perbaiki fungsi persistData
+function persistData(){
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items));
+  } catch(e) {
+    console.error('Gagal menyimpan data:', e);
+  }
+}
+
+// 2. Pindahkan kode inisialisasi ke luar event listener
+// Hapus kode (async () => {...})() dari dalam event listener saveItemBtn
+
+// 3. Tambahkan fungsi untuk memuat data dari localStorage
+function loadFromLocalStorage(){
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if(stored) {
+      state.items = JSON.parse(stored);
+      return true;
+    }
+    return false;
+  } catch(e) {
+    console.error('Gagal memuat data lokal:', e);
+    return false;
+  }
+}
+
+// 4. Perbaiki bagian init di akhir
+(async () => {
+  // Coba muat dari localStorage dulu
+  if(!loadFromLocalStorage()) {
+    // Jika tidak ada, ambil dari URL
+    try {
+      state.items = await loadData();
+    } catch(err) {
+      console.error(err);
+      alert("Gagal mengambil data online");
+      state.items = [];
+    }
+  }
+  refreshAll();
+})();
 
 const state = {
   items: [],
@@ -794,25 +835,6 @@ document.getElementById('saveItemBtn').addEventListener('click', ()=>{
   resetForm();
 // ---------- Init ----------
 
-(async () => {
-
-  try {
-
-    state.items = await loadData();
-
-    refreshAll();
-
-  } catch(err) {
-
-    console.error(err);
-
-    alert("Gagal mengambil data online");
-
-  }
-
-})();
-  renderManageList();
-});
 
 // Manage list
 function renderManageList(){
