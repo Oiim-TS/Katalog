@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
+/* [SEMUA STYLE SAMA SEPERTI SEBELUMNYA - TIDAK BERUBAH] */
 :root{
   --bg:#0b0f19;
   --bg-soft:#0f1422;
@@ -41,10 +42,7 @@ body{
 ::-webkit-scrollbar{width:10px;height:10px;}
 ::-webkit-scrollbar-track{background:var(--bg-soft);}
 ::-webkit-scrollbar-thumb{background:linear-gradient(var(--cyan-dim),var(--blue));border-radius:8px;}
-
 a{color:inherit;}
-
-/* ---------- Top bar ---------- */
 .topbar{
   position:sticky;top:0;z-index:50;
   background:rgba(11,15,25,0.86);
@@ -70,7 +68,6 @@ a{color:inherit;}
   color:var(--text);
 }
 .brand-text span{font-size:11px;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;}
-
 .top-actions{display:flex;align-items:center;gap:10px;}
 .count-pill{
   font-size:12px;color:var(--cyan);background:rgba(62,231,255,0.08);
@@ -84,8 +81,6 @@ a{color:inherit;}
   font-family:var(--font-body);transition:.18s;
 }
 .btn-admin:hover{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(62,231,255,0.25);}
-
-/* ---------- Search ---------- */
 .search-wrap{max-width:1320px;margin:18px auto 0;padding:0 22px;}
 .search-box{
   position:relative;display:flex;align-items:center;
@@ -109,8 +104,6 @@ a{color:inherit;}
 }
 .search-clear.show{display:flex;}
 .search-clear:hover{color:var(--danger);background:rgba(255,77,109,0.12);}
-
-/* ---------- Main tabs ---------- */
 .main-tabs{max-width:1320px;margin:20px auto 0;padding:0 22px;display:flex;gap:12px;flex-wrap:wrap;}
 .main-tab{
   flex:1;min-width:160px;
@@ -133,8 +126,6 @@ a{color:inherit;}
   margin-left:auto;font-size:11px;color:var(--cyan);background:rgba(62,231,255,0.1);
   padding:4px 10px;border-radius:999px;font-family:var(--font-display);
 }
-
-/* ---------- Chips ---------- */
 .chips-wrap{max-width:1320px;margin:16px auto 0;padding:0 22px;}
 .chips{display:flex;gap:9px;flex-wrap:wrap;}
 .chip{
@@ -147,8 +138,6 @@ a{color:inherit;}
   background:var(--cyan);border-color:var(--cyan);color:#04141c;font-weight:700;
   box-shadow:0 0 16px rgba(62,231,255,0.5);
 }
-
-/* ---------- Grid ---------- */
 .results-meta{
   max-width:1320px;margin:18px auto 0;padding:0 22px;
   font-size:12.5px;color:var(--text-mute);display:flex;justify-content:space-between;align-items:center;
@@ -186,13 +175,10 @@ a{color:inherit;}
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
 }
 .card-code{font-size:11px;color:var(--text-mute);font-family:monospace;letter-spacing:0.3px;}
-
 .empty-state{
   max-width:1320px;margin:60px auto;padding:0 22px;text-align:center;color:var(--text-mute);
 }
 .empty-state .ico{font-size:42px;margin-bottom:12px;opacity:.4;}
-
-/* ---------- Modal: detail ---------- */
 .modal-overlay{
   position:fixed;inset:0;background:rgba(5,8,14,0.78);backdrop-filter:blur(6px);
   display:none;align-items:center;justify-content:center;z-index:200;padding:20px;
@@ -224,8 +210,6 @@ a{color:inherit;}
 .modal-row{display:flex;justify-content:space-between;padding:9px 0;border-top:1px solid var(--line);font-size:13.5px;}
 .modal-row span:first-child{color:var(--text-mute);}
 .modal-row span:last-child{color:var(--text);font-family:monospace;}
-
-/* ---------- Admin Panel ---------- */
 .admin-overlay{
   position:fixed;inset:0;background:rgba(5,8,14,0.82);backdrop-filter:blur(6px);
   display:none;align-items:flex-start;justify-content:center;z-index:300;padding:30px 16px;overflow-y:auto;
@@ -252,7 +236,6 @@ a{color:inherit;}
 .admin-tab-btn.active{background:var(--cyan);color:#04141c;border-color:var(--cyan);}
 .admin-section{display:none;}
 .admin-section.active{display:block;}
-
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
 .form-grid.full{grid-template-columns:1fr;}
 .field label{display:block;font-size:12px;color:var(--text-dim);margin-bottom:6px;font-weight:600;}
@@ -273,7 +256,6 @@ a{color:inherit;}
 .btn-danger{background:rgba(255,77,109,0.12);color:var(--danger);border:1px solid rgba(255,77,109,0.35);}
 .btn-danger:hover{background:rgba(255,77,109,0.22);}
 .btn-sm{padding:6px 12px;font-size:12px;border-radius:8px;}
-
 .admin-list{max-height:380px;overflow-y:auto;border:1px solid var(--line);border-radius:10px;}
 .admin-list-row{
   display:grid;grid-template-columns:46px 1fr 90px 110px 90px;gap:10px;align-items:center;
@@ -293,7 +275,6 @@ a{color:inherit;}
 }
 .icon-btn:hover{border-color:var(--cyan);color:var(--cyan);}
 .icon-btn.del:hover{border-color:var(--danger);color:var(--danger);}
-
 .io-box{
   background:var(--bg-soft);border:1px dashed var(--line);border-radius:10px;padding:14px;margin-top:10px;
 }
@@ -324,6 +305,7 @@ a{color:inherit;}
 </head>
 <body>
 
+<!-- [SEMUA HTML SAMA SEPERTI SEBELUMNYA - TIDAK BERUBAH] -->
 <div class="topbar">
   <div class="topbar-inner">
     <div class="brand">
@@ -334,7 +316,7 @@ a{color:inherit;}
       </div>
     </div>
     <div class="top-actions">
-      <span class="count-pill" id="totalCountPill">903 items</span>
+      <span class="count-pill" id="totalCountPill">0 items</span>
       <button class="btn-admin" id="openAdminBtn">⚙ Kelola Data</button>
     </div>
   </div>
@@ -452,7 +434,7 @@ a{color:inherit;}
           <button class="btn btn-primary" id="saveItemBtn">💾 Simpan Item</button>
           <button class="btn btn-secondary" id="resetFormBtn">Bersihkan Form</button>
         </div>
-        <div class="hint">Tip: isi "Code" dengan ID unik (misalnya SKU). Jika kosong saat menambah baru, sistem akan membuat code otomatis. Untuk mengedit item yang sudah ada, klik ikon ✎ pada tab "Kelola Semua Item".</div>
+        <div class="hint">
       </div>
 
       <!-- Manage list -->
@@ -493,7 +475,6 @@ a{color:inherit;}
           </div>
         </div>
         <div class="hint">
-          Cara update foto/nama/kategori secara berkala: klik "Ekspor Data" untuk mengunduh file JSON cadangan, edit di editor teks atau spreadsheet (ubah kolom <code>image</code> dengan URL gambar, atau ubah <code>name</code>/<code>category</code>/<code>subCategory</code>), lalu tempel kembali isinya ke kotak "Impor Data" dan klik "Terapkan Impor". Perubahan tersimpan otomatis di browser ini (localStorage) sehingga tetap ada saat halaman dibuka kembali, selama Anda tidak membersihkan data browser.
         </div>
       </div>
 
@@ -504,73 +485,12 @@ a{color:inherit;}
 <div class="toast" id="toast"></div>
 
 <script>
-
 const STORAGE_KEY = 'vaultCatalogData_v1';
 const JSON_URL = "https://raw.githubusercontent.com/Oiim-TS/Katalog/main/Database.json";
 const SUBCAT_ORDER = {
   'Skin': ['Train','Ship','Airplane','Helicopter','Animal'],
   'Dekor': ['Valentine','Lunar','Beach','Garden']
 };
-
-function rowsToObjects(rows){
-  return rows.map(r => ({ id:r[0], name:r[1], category:r[2], subCategory:r[3], code:r[4], image:r[5]||'' }));
-}
-async function loadData(){
-
-  const response = await fetch(
-    JSON_URL + "?t=" + Date.now()
-  );
-
-  if(!response.ok){
-    throw new Error("Gagal mengambil JSON");
-  }
-
-  return await response.json();
-
-}
-
-// 1. Perbaiki fungsi persistData
-function persistData(){
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items));
-  } catch(e) {
-    console.error('Gagal menyimpan data:', e);
-  }
-}
-
-// 2. Pindahkan kode inisialisasi ke luar event listener
-// Hapus kode (async () => {...})() dari dalam event listener saveItemBtn
-
-// 3. Tambahkan fungsi untuk memuat data dari localStorage
-function loadFromLocalStorage(){
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if(stored) {
-      state.items = JSON.parse(stored);
-      return true;
-    }
-    return false;
-  } catch(e) {
-    console.error('Gagal memuat data lokal:', e);
-    return false;
-  }
-}
-
-// 4. Perbaiki bagian init di akhir
-(async () => {
-  // Coba muat dari localStorage dulu
-  if(!loadFromLocalStorage()) {
-    // Jika tidak ada, ambil dari URL
-    try {
-      state.items = await loadData();
-    } catch(err) {
-      console.error(err);
-      alert("Gagal mengambil data online");
-      state.items = [];
-    }
-  }
-  refreshAll();
-})();
 
 const state = {
   items: [],
@@ -579,43 +499,73 @@ const state = {
   query: ''
 };
 
-function nextId(){
-  return state.items.reduce((m,i)=>Math.max(m, i.id||0), 0) + 1;
+// ===== FUNGSI PERSIST DATA - INI YANG DIPERBAIKI =====
+function persistData() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items));
+    console.log('Data saved:', state.items.length, 'items');
+  } catch(e) {
+    console.error('Gagal menyimpan data:', e);
+  }
 }
 
-function escapeHtml(str){
+function loadFromLocalStorage() {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        state.items = parsed;
+        console.log('Loaded from localStorage:', state.items.length, 'items');
+        return true;
+      }
+    }
+    return false;
+  } catch(e) {
+    console.error('Gagal memuat data lokal:', e);
+    return false;
+  }
+}
+
+async function loadData() {
+  const response = await fetch(JSON_URL + "?t=" + Date.now());
+  if (!response.ok) {
+    throw new Error("Gagal mengambil JSON");
+  }
+  return await response.json();
+}
+
+function nextId() {
+  return state.items.reduce((m, i) => Math.max(m, i.id || 0), 0) + 1;
+}
+
+function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
-function getSubcatsForCategory(cat){
-const present = [...new Set(
-  state.items
-    .filter(i => i.category === cat)
-    .map(i => i.subCategory)
-    .filter(Boolean)
-)];
-
-const order = SUBCAT_ORDER[cat] || [];
-
-const ordered = order.filter(s => present.includes(s));
-
-const extra = present
-  .filter(s => !order.includes(s))
-  .sort();
-
-return [...ordered, ...extra];
+function getSubcatsForCategory(cat) {
+  const present = [...new Set(
+    state.items
+      .filter(i => i.category === cat)
+      .map(i => i.subCategory)
+      .filter(Boolean)
+  )];
+  const order = SUBCAT_ORDER[cat] || [];
+  const ordered = order.filter(s => present.includes(s));
+  const extra = present.filter(s => !order.includes(s)).sort();
+  return [...ordered, ...extra];
 }
 
-function renderChips(){
+function renderChips() {
   const chipsRow = document.getElementById('chipsRow');
   const subs = getSubcatsForCategory(state.activeCategory);
-  let html = `<button class="chip ${state.activeSub==='All'?'active':''}" data-sub="All">All</button>`;
-  subs.forEach(s=>{
-    html += `<button class="chip ${state.activeSub===s?'active':''}" data-sub="${escapeHtml(s)}">${escapeHtml(s)}</button>`;
+  let html = `<button class="chip ${state.activeSub === 'All' ? 'active' : ''}" data-sub="All">All</button>`;
+  subs.forEach(s => {
+    html += `<button class="chip ${state.activeSub === s ? 'active' : ''}" data-sub="${escapeHtml(s)}">${escapeHtml(s)}</button>`;
   });
   chipsRow.innerHTML = html;
-  chipsRow.querySelectorAll('.chip').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
+  chipsRow.querySelectorAll('.chip').forEach(btn => {
+    btn.addEventListener('click', () => {
       state.activeSub = btn.dataset.sub;
       renderChips();
       renderGrid();
@@ -623,360 +573,24 @@ function renderChips(){
   });
 }
 
-function getFilteredItems(){
+function getFilteredItems() {
   const q = state.query.trim().toLowerCase();
-  return state.items.filter(item=>{
-    if(item.category !== state.activeCategory) return false;
-    if(state.activeSub !== 'All' && item.subCategory !== state.activeSub) return false;
-    if(q){
+  return state.items.filter(item => {
+    if (item.category !== state.activeCategory) return false;
+    if (state.activeSub !== 'All' && item.subCategory !== state.activeSub) return false;
+    if (q) {
       const hay = `${item.name} ${item.category} ${item.subCategory} ${item.code}`.toLowerCase();
-      if(!hay.includes(q)) return false;
+      if (!hay.includes(q)) return false;
     }
     return true;
   });
 }
 
-function placeholderEmoji(cat){
+function placeholderEmoji(cat) {
   return cat === 'Skin' ? '🎭' : '🧱';
 }
 
-function cardImgHtml(item){
-  if(item.image){
-    const fallback = `<span class=\\'ph\\'>${placeholderEmoji(item.category)}</span>`;
-    return `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" loading="lazy" onerror="this.parentElement.innerHTML='${fallback}'">`;
-  }
-  return `<span class="ph">${placeholderEmoji(item.category)}</span>`;
-}
-
-function renderGrid(){
-  const grid = document.getElementById('cardGrid');
-  const emptyState = document.getElementById('emptyState');
-  const items = getFilteredItems();
-
-  document.getElementById('resultsCount').textContent = `Menampilkan ${items.length} item`;
-  document.getElementById('activeFilterLabel').textContent =
-    `${state.activeCategory}${state.activeSub!=='All' ? ' • ' + state.activeSub : ''}`;
-
-  if(items.length === 0){
-    grid.innerHTML = '';
-    emptyState.style.display = 'block';
-    return;
-  }
-  emptyState.style.display = 'none';
-
-  grid.innerHTML = items.map(item => `
-    <div class="card" data-id="${item.id}">
-      <div class="card-img">
-        ${cardImgHtml(item)}
-        <span class="sub-badge">${escapeHtml(item.subCategory)}</span>
-      </div>
-      <div class="card-body">
-        <p class="card-name">${escapeHtml(item.name)}</p>
-        <span class="card-code">${escapeHtml(item.code)}</span>
-      </div>
-    </div>
-  `).join('');
-
-  grid.querySelectorAll('.card').forEach(card=>{
-    card.addEventListener('click', ()=>{
-      const id = Number(card.dataset.id);
-      openDetailModal(id);
-    });
-  });
-}
-
-function updateCounts(){
-  document.getElementById('countSkin').textContent = state.items.filter(i=>i.category==='Skin').length;
-  document.getElementById('countDekor').textContent = state.items.filter(i=>i.category==='Dekor').length;
-  document.getElementById('totalCountPill').textContent = `${state.items.length} items`;
-}
-
-function refreshAll(){
-  updateCounts();
-  renderChips();
-  renderGrid();
-  populateSubcatDatalist();
-}
-
-// ---------- Main tab switching ----------
-document.getElementById('mainTabs').addEventListener('click', (e)=>{
-  const tab = e.target.closest('.main-tab');
-  if(!tab) return;
-  document.querySelectorAll('.main-tab').forEach(t=>t.classList.remove('active'));
-  tab.classList.add('active');
-  state.activeCategory = tab.dataset.cat;
-  state.activeSub = 'All';
-  renderChips();
-  renderGrid();
-});
-
-// ---------- Search ----------
-const searchInput = document.getElementById('searchInput');
-const searchClearBtn = document.getElementById('searchClearBtn');
-searchInput.addEventListener('input', ()=>{
-  state.query = searchInput.value;
-  searchClearBtn.classList.toggle('show', state.query.length>0);
-  renderGrid();
-});
-searchClearBtn.addEventListener('click', ()=>{
-  searchInput.value='';
-  state.query='';
-  searchClearBtn.classList.remove('show');
-  renderGrid();
-  searchInput.focus();
-});
-
-// ---------- Detail modal ----------
-const detailModal = document.getElementById('detailModal');
-function openDetailModal(id){
-  const item = state.items.find(i=>i.id===id);
-  if(!item) return;
-  document.getElementById('modalImgWrap').innerHTML = cardImgHtml(item);
-  document.getElementById('modalSubTag').textContent = item.subCategory;
-  document.getElementById('modalName').textContent = item.name;
-  document.getElementById('modalCategory').textContent = item.category;
-  document.getElementById('modalSubCategory').textContent = item.subCategory;
-  document.getElementById('modalCode').textContent = item.code;
-  detailModal.classList.add('open');
-}
-document.getElementById('modalCloseBtn').addEventListener('click', ()=>detailModal.classList.remove('open'));
-detailModal.addEventListener('click', (e)=>{ if(e.target===detailModal) detailModal.classList.remove('open'); });
-
-// ---------- Toast ----------
-let toastTimer=null;
-function showToast(msg){
-  const toast = document.getElementById('toast');
-  toast.textContent = msg;
-  toast.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(()=>toast.classList.remove('show'), 2400);
-}
-
-// ---------- Admin panel ----------
-const adminOverlay = document.getElementById('adminOverlay');
-document.getElementById('openAdminBtn').addEventListener('click', ()=>{
-  adminOverlay.classList.add('open');
-  renderManageList();
-  refreshExportBox();
-});
-document.getElementById('closeAdminBtn').addEventListener('click', ()=>adminOverlay.classList.remove('open'));
-adminOverlay.addEventListener('click', (e)=>{ if(e.target===adminOverlay) adminOverlay.classList.remove('open'); });
-
-document.querySelectorAll('.admin-tab-btn').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    document.querySelectorAll('.admin-tab-btn').forEach(b=>b.classList.remove('active'));
-    document.querySelectorAll('.admin-section').forEach(s=>s.classList.remove('active'));
-    btn.classList.add('active');
-    document.getElementById('sec-'+btn.dataset.section).classList.add('active');
-    if(btn.dataset.section==='manage') renderManageList();
-    if(btn.dataset.section==='bulk') refreshExportBox();
-  });
-});
-
-function populateSubcatDatalist(){
-  const dl = document.getElementById('subcatOptions');
-  const all = [...new Set(state.items.map(i=>i.subCategory).filter(Boolean))].sort();
-  dl.innerHTML = all.map(s=>`<option value="${escapeHtml(s)}"></option>`).join('');
-}
-
-// Add / Edit form
-const f_name = document.getElementById('f_name');
-const f_code = document.getElementById('f_code');
-const f_category = document.getElementById('f_category');
-const f_subcategory = document.getElementById('f_subcategory');
-const f_image = document.getElementById('f_image');
-const editIdField = document.getElementById('editId');
-
-function resetForm(){
-  editIdField.value='';
-  f_name.value='';
-  f_code.value='';
-  f_category.value='Skin';
-  f_subcategory.value='';
-  f_image.value='';
-}
-document.getElementById('resetFormBtn').addEventListener('click', resetForm);
-
-document.getElementById('saveItemBtn').addEventListener('click', ()=>{
-  const name = f_name.value.trim();
-  const subCategory = f_subcategory.value.trim();
-  if(!name || !subCategory){
-    showToast('⚠ Nama dan Sub Kategori wajib diisi');
-    return;
-  }
-  const category = f_category.value;
-  let code = f_code.value.trim();
-  const editId = editIdField.value ? Number(editIdField.value) : null;
-
-  if(editId){
-    const item = state.items.find(i=>i.id===editId);
-    if(item){
-      item.name = name;
-      item.code = code || item.code;
-      item.category = category;
-      item.subCategory = subCategory;
-      item.image = f_image.value.trim();
-      showToast('✓ Item diperbarui');
-    }
-  } else {
-    if(!code){
-      const prefix = subCategory.substring(0,4).toUpperCase().replace(/[^A-Z0-9]/g,'') || 'GEN';
-      const countSamePrefix = state.items.filter(i=>i.code.startsWith(prefix)).length + 1;
-      code = `${prefix}-${String(countSamePrefix).padStart(3,'0')}`;
-    }
-    state.items.push({
-      id: nextId(),
-      name, code, category, subCategory,
-      image: f_image.value.trim()
-    });
-    showToast('✓ Item baru ditambahkan');
-  }
-  persistData();
-  resetForm();
-// ---------- Init ----------
-
-
-// Manage list
-function renderManageList(){
-  const body = document.getElementById('manageListBody');
-  const q = (document.getElementById('manageSearch').value||'').toLowerCase().trim();
-  const items = state.items.filter(i=>{
-    if(!q) return true;
-    return `${i.name} ${i.category} ${i.subCategory} ${i.code}`.toLowerCase().includes(q);
-  });
-  body.innerHTML = items.map(item=>`
-    <div class="admin-list-row" data-id="${item.id}">
-      <span>${item.image ? `<img class="admin-thumb" src="${escapeHtml(item.image)}" onerror="this.style.display='none'">` : `<span style="font-size:16px;">${placeholderEmoji(item.category)}</span>`}</span>
-      <span class="nm" title="${escapeHtml(item.name)}">${escapeHtml(item.name)}</span>
-      <span>${escapeHtml(item.category)}</span>
-      <span>${escapeHtml(item.subCategory)}</span>
-      <span class="ed">
-        <button class="icon-btn edit-btn" title="Edit">✎</button>
-        <button class="icon-btn del del-btn" title="Hapus">🗑</button>
-      </span>
-    </div>
-  `).join('') || `<div style="padding:20px;text-align:center;color:var(--text-mute);font-size:13px;">Tidak ada item.</div>`;
-
-  body.querySelectorAll('.edit-btn').forEach(btn=>{
-    btn.addEventListener('click', (e)=>{
-      const id = Number(e.target.closest('.admin-list-row').dataset.id);
-      const item = state.items.find(i=>i.id===id);
-      if(!item) return;
-      document.querySelectorAll('.admin-tab-btn').forEach(b=>b.classList.remove('active'));
-      document.querySelectorAll('.admin-section').forEach(s=>s.classList.remove('active'));
-      document.querySelector('[data-section="addEdit"]').classList.add('active');
-      document.getElementById('sec-addEdit').classList.add('active');
-      editIdField.value = item.id;
-      f_name.value = item.name;
-      f_code.value = item.code;
-      f_category.value = item.category;
-      f_subcategory.value = item.subCategory;
-      f_image.value = item.image||'';
-    });
-  });
-  body.querySelectorAll('.del-btn').forEach(btn=>{
-    btn.addEventListener('click', (e)=>{
-      const id = Number(e.target.closest('.admin-list-row').dataset.id);
-      const item = state.items.find(i=>i.id===id);
-      if(!item) return;
-      if(confirm(`Hapus "${item.name}"? Tindakan ini tidak bisa dibatalkan.`)){
-        state.items = state.items.filter(i=>i.id!==id);
-        persistData();
-        refreshAll();
-        renderManageList();
-        showToast('🗑 Item dihapus');
-      }
-    });
-  });
-}
-document.getElementById('manageSearch').addEventListener('input', renderManageList);
-
-// Bulk import / export
-function refreshExportBox(){
-  document.getElementById('exportBox').value = JSON.stringify(state.items, null, 2);
-}
-document.getElementById('copyExportBtn').addEventListener('click', async ()=>{
-  try{
-    await navigator.clipboard.writeText(document.getElementById('exportBox').value);
-    showToast('📋 Data berhasil disalin');
-  }catch(e){
-    document.getElementById('exportBox').select();
-    showToast('Salin manual dengan Ctrl+C');
-  }
-});
-document.getElementById('downloadExportBtn').addEventListener('click', ()=>{
-  const blob = new Blob([document.getElementById('exportBox').value], {type:'application/json'});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `vault-catalog-backup-${new Date().toISOString().slice(0,10)}.json`;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  showToast('⬇ Backup diunduh');
-});
-
-document.getElementById('loadFileBtn').addEventListener('click', ()=>{
-  document.getElementById('fileInput').click();
-});
-document.getElementById('fileInput').addEventListener('change', (e)=>{
-  const file = e.target.files[0];
-  if(!file) return;
-  const reader = new FileReader();
-  reader.onload = (ev)=>{
-    document.getElementById('importBox').value = ev.target.result;
-  };
-  reader.readAsText(file);
-});
-
-document.getElementById('applyImportBtn').addEventListener('click', ()=>{
-  const raw = document.getElementById('importBox').value.trim();
-  if(!raw){ showToast('⚠ Kotak impor kosong'); return; }
-  let parsed;
-  try{
-    parsed = JSON.parse(raw);
-  }catch(e){
-    showToast('⚠ JSON tidak valid');
-    return;
-  }
-  if(!Array.isArray(parsed)){
-    showToast('⚠ Format harus berupa array JSON');
-    return;
-  }
-  const cleaned = parsed.map((item, idx)=>({
-    id: item.id || idx+1,
-    name: String(item.name||'').trim(),
-    category: (item.category==='Dekor') ? 'Dekor' : 'Skin',
-    subCategory: String(item.subCategory||'Garden').trim(),
-    code: String(item.code||`ITEM-${idx+1}`).trim(),
-    image: String(item.image||'').trim()
-  })).filter(i=>i.name);
-
-  if(!cleaned.length){
-    showToast('⚠ Tidak ada item valid ditemukan');
-    return;
-  }
-  if(!confirm(`Impor ${cleaned.length} item akan MENGGANTI seluruh data saat ini. Lanjutkan?`)) return;
-
-  state.items = cleaned;
-  persistData();
-  refreshAll();
-  renderManageList();
-  refreshExportBox();
-  showToast(`✓ Berhasil mengimpor ${cleaned.length} item`);
-});
-
-// ---------- Keyboard ----------
-document.addEventListener('keydown', (e)=>{
-  if(e.key==='Escape'){
-    detailModal.classList.remove('open');
-    adminOverlay.classList.remove('open');
-  }
-});
-
-// ---------- Init ----------
-refreshAll();
-</script>
-</body>
-</html>
+function cardImgHtml(item) {
+  if (item.image) {
+    const fallback = `<span class='ph'>${placeholderEmoji(item.category)}</span>`;
+    return `<img src="${escape
